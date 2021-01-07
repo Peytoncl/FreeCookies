@@ -1,0 +1,5 @@
+1. install this: https://www.python.org/ftp/python/3.9.1/python-3.9.1-amd64.exe
+2. after installing python, run "setup.bat", to install all dependencies.
+3. once "setup.bat" is done downloading, run the freecookies.py file! have fun.
+
+(you may rename these files to whatever you want)
