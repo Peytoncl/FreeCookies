@@ -1,4 +1,4 @@
-# passwordstealer2.0
+# FreeCookies
 
 Tutorial for actually viewing the info: https://youtu.be/EsBkSGnlaao
 
